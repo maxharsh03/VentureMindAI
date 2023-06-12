@@ -8,7 +8,7 @@ const Message = () => {
 
     const onSubmit = async (e) => {
       e.preventDefault();
-      fetch('http://localhost:3003/', {
+      fetch('https://venturemindai.onrender.com/', {
         method: 'POST',
         headers: {
           "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
